@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(./img/table.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+  text-shadow: 2px 2px 0 #8b4513;
+  font-weight: 900;
+  color: white;
+}
+
+#plateau {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+  gap: 1px;
+  background: #8b4513;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.385);
+}
+
+.case {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer
+}
+
+.case-claire {
+  background: #deb887;
+}
+
+.case-foncee {
+  background: #8b4513;
+}
+
+.pion {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  transition: transform .3s ease;
+}
+
+.pion-j1 {
+  background: #fff;
+}
+.pion-j2 {
+  background: #000;
+}
+
+.pion.selectionne {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255,255,0,.5)
+}
+
+.case-possible {
+  background: rgba(255,255,0,.5);
+}
+
+.info-jeu {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#nouvelle-partie {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow:  0 0 3px rgba(0, 0, 0, 0.385);
+  transition:background .2s ease-in-out;
+  &:hover {
+    background: #347a37;
+  }
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+
+.dame {
+  border: 4px solid gold;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    transform-origin: top center;
+}
+
+@media (max-width: 600px) {
+    body {
+        transform: scale(0.80);
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        transform: scale(0.68);
+    }
+}
+
+@media (max-width: 380px) {
+    body {
+        transform: scale(0.60);
+    }
+}
